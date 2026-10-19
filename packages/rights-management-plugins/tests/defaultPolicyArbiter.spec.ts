@@ -5239,7 +5239,7 @@ describe("DefaultPolicyArbiter", () => {
 				assigner: "did:example:default-assigner",
 				assignee: "did:example:default-assignee",
 				"@id": "policy:twin-profile-uppercase-host",
-				profile: OdrlProfiles.Twin.replace("schema.3sixty.global", "SCHEMA.TWINDEV.ORG"),
+				profile: OdrlProfiles.Twin.replace("schema.3sixty.global", "SCHEMA.3SIXTY.GLOBAL"),
 				permission: [
 					{
 						action: "use",
