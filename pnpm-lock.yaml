@@ -247,9 +247,6 @@ importers:
       '@3sixty/data-json-ld':
         specifier: next
         version: 0.20.0-next.3
-      '@3sixty/engine-models':
-        specifier: next
-        version: 0.20.0-next.1
       '@3sixty/entity':
         specifier: next
         version: 0.20.0-next.2
@@ -1312,10 +1309,6 @@ packages:
 
   '@3sixty/data-json-path@0.20.0-next.3':
     resolution: {integrity: sha512-5FguKap+8vsQk6mMCV2WCt+BQR8xTS39y7mXxaXk7W1IwDy59B4K7AZsB38ZmuqSBRHWZMdHr0tXvTcuix/WlQ==}
-    engines: {node: '>=24.0.0'}
-
-  '@3sixty/engine-models@0.20.0-next.1':
-    resolution: {integrity: sha512-ilR2HwIJ3Jwu+ikNJc/uiVN9PQrm8Ln9ku8bYztt2Ja9OiOzc+vFQRz/9iXPV7UUfH/nMWjxu1O5BrzhOxERiQ==}
     engines: {node: '>=24.0.0'}
 
   '@3sixty/entity-storage-connector-memory@0.20.0-next.1':
@@ -4726,13 +4719,6 @@ snapshots:
       '@3sixty/core': 0.20.0-next.2
       '@3sixty/nameof': 0.20.0-next.2
       json-p3: 2.3.1
-
-  '@3sixty/engine-models@0.20.0-next.1':
-    dependencies:
-      '@3sixty/context': 0.20.0-next.2
-      '@3sixty/core': 0.20.0-next.2
-      '@3sixty/entity': 0.20.0-next.2
-      '@3sixty/nameof': 0.20.0-next.2
 
   '@3sixty/entity-storage-connector-memory@0.20.0-next.1':
     dependencies:
