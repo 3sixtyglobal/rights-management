@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/rights-management-pnp-service",
-	"version": "0.20.0-next.0",
+	"version": "0.20.0-next.1",
 	"description": "Policy negotiation point service for running contract negotiation workflows and outcomes.",
 	"repository": {
 		"type": "git",
@@ -37,7 +37,7 @@
 		"@3sixty/entity-storage-models": "next",
 		"@3sixty/logging-models": "next",
 		"@3sixty/nameof": "next",
-		"@3sixty/rights-management-models": "0.20.0-next.0",
+		"@3sixty/rights-management-models": "0.20.0-next.1",
 		"@3sixty/standards-dataspace-protocol": "next",
 		"@3sixty/standards-w3c-did": "next",
 		"@3sixty/standards-w3c-odrl": "next",
@@ -53,8 +53,8 @@
 		"@3sixty/logging-service": "next",
 		"@3sixty/nameof-transformer": "next",
 		"@3sixty/nameof-vitest-plugin": "next",
-		"@3sixty/rights-management-pap-service": "0.20.0-next.0",
-		"@3sixty/rights-management-pip-service": "0.20.0-next.0",
+		"@3sixty/rights-management-pap-service": "0.20.0-next.1",
+		"@3sixty/rights-management-pip-service": "0.20.0-next.1",
 		"@3sixty/validate-locales": "next",
 		"@3sixty/vault-connector-entity-storage": "next",
 		"@3sixty/vault-models": "next",
