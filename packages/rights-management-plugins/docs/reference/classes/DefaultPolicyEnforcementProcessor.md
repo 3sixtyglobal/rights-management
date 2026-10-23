@@ -70,11 +70,11 @@ Process the response from the policy decision point.
 
 #### Type Parameters
 
-##### D
+##### D {#d}
 
 `D` = `unknown`
 
-##### R
+##### R {#r}
 
 `R` = `D`
 

@@ -72,7 +72,7 @@ Makes decisions regarding policy access to data.
 
 #### Type Parameters
 
-##### D
+##### D {#d}
 
 `D` = `unknown`
 

@@ -62,11 +62,11 @@ Process the data using Policy Decision Point (PDP) and return the manipulated da
 
 #### Type Parameters
 
-##### D
+##### D {#d}
 
 `D` = `unknown`
 
-##### R
+##### R {#r}
 
 `R` = `D`
 
@@ -92,6 +92,8 @@ Optional action to make a decision on, if not provided, the arbiter will evaluat
 
 ##### trustData?
 
+\{\[`key`: `string`\]: `IJsonLdNodeObject`; \}
+
 Trust verification data to pass to the PDP alongside PIP-retrieved information.
 
 #### Returns
@@ -114,11 +116,11 @@ Process the data using Policy Decision Point (PDP) and return the manipulated da
 
 #### Type Parameters
 
-##### D
+##### D {#d-1}
 
 `D` = `unknown`
 
-##### R
+##### R {#r-1}
 
 `R` = `D`
 
@@ -162,11 +164,11 @@ Process the data using Policy Decision Point (PDP) and return the manipulated da
 
 #### Type Parameters
 
-##### D
+##### D {#d-2}
 
 `D` = `unknown`
 
-##### R
+##### R {#r-2}
 
 `R` = `D`
 
