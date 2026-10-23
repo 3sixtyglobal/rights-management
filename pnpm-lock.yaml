@@ -345,7 +345,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-dataspace-protocol':
         specifier: next
@@ -421,7 +421,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-dataspace-protocol':
         specifier: next
@@ -449,16 +449,16 @@ importers:
         specifier: next
         version: 0.20.0-next.2(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/rights-management-pap-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pap-service
       '@3sixty/rights-management-pip-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pip-service
       '@3sixty/rights-management-pmp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pmp-service
       '@3sixty/rights-management-pxp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pxp-service
       '@3sixty/validate-locales':
         specifier: next
@@ -512,7 +512,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-dataspace-protocol':
         specifier: next
@@ -540,19 +540,19 @@ importers:
         specifier: next
         version: 0.20.0-next.2(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/rights-management-pap-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pap-service
       '@3sixty/rights-management-pdp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pdp-service
       '@3sixty/rights-management-pip-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pip-service
       '@3sixty/rights-management-pmp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pmp-service
       '@3sixty/rights-management-pxp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pxp-service
       '@3sixty/validate-locales':
         specifier: next
@@ -609,7 +609,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-w3c-odrl':
         specifier: next
@@ -697,7 +697,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-dataspace-protocol':
         specifier: next
@@ -725,25 +725,25 @@ importers:
         specifier: next
         version: 0.20.0-next.2(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/rights-management-pap-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pap-service
       '@3sixty/rights-management-pdp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pdp-service
       '@3sixty/rights-management-pep-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pep-service
       '@3sixty/rights-management-pip-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pip-service
       '@3sixty/rights-management-pmp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pmp-service
       '@3sixty/rights-management-pnp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pnp-service
       '@3sixty/rights-management-pxp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pxp-service
       '@3sixty/validate-locales':
         specifier: next
@@ -794,7 +794,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
     devDependencies:
       '@3sixty/entity-storage-connector-memory':
@@ -816,7 +816,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/rights-management-pap-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pap-service
       '@3sixty/standards-w3c-odrl':
         specifier: next
@@ -885,7 +885,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-dataspace-protocol':
         specifier: next
@@ -928,10 +928,10 @@ importers:
         specifier: next
         version: 0.20.0-next.2(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/rights-management-pap-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pap-service
       '@3sixty/rights-management-pip-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pip-service
       '@3sixty/validate-locales':
         specifier: next
@@ -988,7 +988,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-w3c-odrl':
         specifier: next
@@ -1076,7 +1076,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-dataspace-protocol':
         specifier: next
@@ -1149,7 +1149,7 @@ importers:
         specifier: next
         version: 0.20.0-next.2
       '@3sixty/rights-management-models':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-models
       '@3sixty/standards-dataspace-protocol':
         specifier: next
@@ -1198,25 +1198,25 @@ importers:
         specifier: next
         version: 0.20.0-next.2(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/rights-management-pap-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pap-service
       '@3sixty/rights-management-pdp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pdp-service
       '@3sixty/rights-management-pep-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pep-service
       '@3sixty/rights-management-pip-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pip-service
       '@3sixty/rights-management-pmp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pmp-service
       '@3sixty/rights-management-pnp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pnp-service
       '@3sixty/rights-management-pxp-service':
-        specifier: 0.20.0-next.0
+        specifier: 0.20.0-next.1
         version: link:../rights-management-pxp-service
       '@3sixty/ts-to-openapi':
         specifier: next

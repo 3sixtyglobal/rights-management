@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/rights-management-pdp-service",
-	"version": "0.20.0-next.0",
+	"version": "0.20.0-next.1",
 	"description": "Policy decision point service for producing authorisation decisions from policies and context.",
 	"repository": {
 		"type": "git",
@@ -33,7 +33,7 @@
 		"@3sixty/data-json-ld": "next",
 		"@3sixty/logging-models": "next",
 		"@3sixty/nameof": "next",
-		"@3sixty/rights-management-models": "0.20.0-next.0",
+		"@3sixty/rights-management-models": "0.20.0-next.1",
 		"@3sixty/standards-dataspace-protocol": "next",
 		"@3sixty/standards-w3c-odrl": "next"
 	},
@@ -44,10 +44,10 @@
 		"@3sixty/logging-service": "next",
 		"@3sixty/nameof-transformer": "next",
 		"@3sixty/nameof-vitest-plugin": "next",
-		"@3sixty/rights-management-pap-service": "0.20.0-next.0",
-		"@3sixty/rights-management-pip-service": "0.20.0-next.0",
-		"@3sixty/rights-management-pmp-service": "0.20.0-next.0",
-		"@3sixty/rights-management-pxp-service": "0.20.0-next.0",
+		"@3sixty/rights-management-pap-service": "0.20.0-next.1",
+		"@3sixty/rights-management-pip-service": "0.20.0-next.1",
+		"@3sixty/rights-management-pmp-service": "0.20.0-next.1",
+		"@3sixty/rights-management-pxp-service": "0.20.0-next.1",
 		"@3sixty/validate-locales": "next",
 		"@types/node": "26.6.5",
 		"@vitest/coverage-v8": "5.0.5",
