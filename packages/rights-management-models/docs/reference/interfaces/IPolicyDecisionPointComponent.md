@@ -23,7 +23,7 @@ Executes any actions on the Policy Execution Point (PXP) before and after decisi
 
 #### Type Parameters
 
-##### D
+##### D {#d}
 
 `D` = `unknown`
 
@@ -48,6 +48,8 @@ The data to make a decision on.
 Optional action to make a decision on, if not provided, the PDP will evaluate all actions in the agreement.
 
 ##### trustData?
+
+\{\[`key`: `string`\]: `IJsonLdNodeObject`; \}
 
 Trust verification data to merge with PIP-retrieved information before arbitration.
 

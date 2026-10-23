@@ -4,7 +4,9 @@ Set policy returned by PAP, including optional PAP-managed lifecycle metadata.
 
 ## Extends
 
-- `IDataspaceProtocolSet`.[`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md).[`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
+- `IDataspaceProtocolSet`
+- [`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md)
+- [`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
 
 ## Properties
 

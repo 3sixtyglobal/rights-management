@@ -4,7 +4,9 @@ Agreement policy returned by PAP, including optional PAP-managed lifecycle metad
 
 ## Extends
 
-- `IDataspaceProtocolAgreement`.[`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md).[`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
+- `IDataspaceProtocolAgreement`
+- [`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md)
+- [`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
 
 ## Properties
 

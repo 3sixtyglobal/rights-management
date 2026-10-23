@@ -4,7 +4,9 @@ Offer policy returned by PAP, including optional PAP-managed lifecycle metadata.
 
 ## Extends
 
-- `IDataspaceProtocolOffer`.[`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md).[`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
+- `IDataspaceProtocolOffer`
+- [`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md)
+- [`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
 
 ## Properties
 

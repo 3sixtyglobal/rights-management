@@ -4,7 +4,9 @@ Base type for any ODRL policy stored and managed by the TWIN rights-management P
 
 ## Extends
 
-- `IDataspaceProtocolPolicy`.[`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md).[`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
+- `IDataspaceProtocolPolicy`
+- [`IRightsManagementPolicyMetadata`](IRightsManagementPolicyMetadata.md)
+- [`IRightsManagementPolicyTrust`](IRightsManagementPolicyTrust.md)
 
 ## Properties
 
