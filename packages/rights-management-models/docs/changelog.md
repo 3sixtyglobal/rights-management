@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.0-next.2](https://github.com/3sixtyglobal/rights-management/compare/rights-management-models-v0.20.0-next.1...rights-management-models-v0.20.0-next.2) (2026-10-26)
+
+
+### Features
+
+* release to next [skip ci] ([#65](https://github.com/3sixtyglobal/rights-management/issues/65)) ([4811772](https://github.com/3sixtyglobal/rights-management/commit/48117726a9c646149a53d0c482aeb97cbb3b9eb9))
+
 ## [0.20.0-next.1](https://github.com/3sixtyglobal/rights-management/compare/rights-management-models-v0.20.0-next.0...rights-management-models-v0.20.0-next.1) (2026-10-23)
 
 
