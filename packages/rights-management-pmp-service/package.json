@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/rights-management-pmp-service",
-	"version": "0.20.0-next.1",
+	"version": "0.20.0-next.2",
 	"description": "Policy management point service for locating and preparing candidate policies.",
 	"repository": {
 		"type": "git",
@@ -34,7 +34,7 @@
 		"@3sixty/core": "next",
 		"@3sixty/logging-models": "next",
 		"@3sixty/nameof": "next",
-		"@3sixty/rights-management-models": "0.20.0-next.1"
+		"@3sixty/rights-management-models": "0.20.0-next.2"
 	},
 	"devDependencies": {
 		"@3sixty/entity": "next",
@@ -44,7 +44,7 @@
 		"@3sixty/logging-service": "next",
 		"@3sixty/nameof-transformer": "next",
 		"@3sixty/nameof-vitest-plugin": "next",
-		"@3sixty/rights-management-pap-service": "0.20.0-next.1",
+		"@3sixty/rights-management-pap-service": "0.20.0-next.2",
 		"@3sixty/standards-w3c-odrl": "next",
 		"@3sixty/validate-locales": "next",
 		"@types/node": "26.6.5",
