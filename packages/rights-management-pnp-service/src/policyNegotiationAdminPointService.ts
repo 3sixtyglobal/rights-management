@@ -1,10 +1,12 @@
 // Copyright 2025 IOTA Stiftung.
+// Copyright 2026 3Sixty Trade Ltd.
 // SPDX-License-Identifier: Apache-2.0.
 import { ContextIdHelper, ContextIdKeys, ContextIdStore } from "@3sixty/context";
 import {
 	AlreadyExistsError,
 	Coerce,
 	ComponentFactory,
+	DurationConstants,
 	Guards,
 	Is,
 	Mutex,
@@ -77,8 +79,7 @@ export class PolicyNegotiationAdminPointService implements IPolicyNegotiationAdm
 		this._negotiationStateTtlMs =
 			(options?.config?.negotiationStateTtlMinutes ??
 				PolicyNegotiationAdminPointService._DEFAULT_NEGOTIATION_STATE_TTL_DEFAULT_MINUTES) *
-			60 *
-			1000;
+			DurationConstants.MsPerMinute;
 		this._mutexTimeoutMs = Coerce.integer(options?.config?.mutexTimeoutMs);
 	}
 
