@@ -1,4 +1,5 @@
 // Copyright 2025 IOTA Stiftung.
+// Copyright 2026 3Sixty Trade Ltd.
 // SPDX-License-Identifier: Apache-2.0.
 import { readFileSync } from "node:fs";
 import path from "node:path";
@@ -6449,6 +6450,22 @@ describe("DefaultPolicyArbiter", () => {
 
 			// PT12H (43200s) != P1D (86400s)
 			const denied = await arbiter.decide(policy, { timeInterval: "PT12H" }, {});
+			expect(denied[0].decision).toBe(PolicyDecision.Denied);
+		});
+
+		test("timeInterval eq grants when the same interval uses different components", async () => {
+			const arbiter = new DefaultPolicyArbiter();
+			const policy = makeAgreement(
+				"policy:timeinterval-eq-components",
+				OdrlLeftOperandType.TimeInterval,
+				OdrlOperatorType.Eq,
+				{ "@value": "P1D", "@type": "xsd:duration" }
+			);
+
+			const granted = await arbiter.decide(policy, { timeInterval: "PT23H60M" }, {});
+			expect(granted[0].decision).toBe(PolicyDecision.Granted);
+
+			const denied = await arbiter.decide(policy, { timeInterval: "PT23H59M59.999999999S" }, {});
 			expect(denied[0].decision).toBe(PolicyDecision.Denied);
 		});
 

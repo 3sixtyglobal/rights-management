@@ -1,4 +1,5 @@
 // Copyright 2025 IOTA Stiftung.
+// Copyright 2026 3Sixty Trade Ltd.
 // SPDX-License-Identifier: Apache-2.0.
 import { HttpContextIdKeys } from "@3sixty/api-models";
 import {
@@ -7,7 +8,7 @@ import {
 	type ScheduledTask
 } from "@3sixty/background-task-scheduler";
 import { ContextIdKeys, ContextIdStore, type IContextIds } from "@3sixty/context";
-import { ComponentFactory, Factory, Is } from "@3sixty/core";
+import { ComponentFactory, DurationConstants, Factory, Is } from "@3sixty/core";
 import type { IJsonLdNodeObject } from "@3sixty/data-json-ld";
 import { MemoryEntityStorageConnector } from "@3sixty/entity-storage-connector-memory";
 import { EntityStorageConnectorFactory } from "@3sixty/entity-storage-models";
@@ -3809,21 +3810,22 @@ describe("PolicyNegotiationPointService", () => {
 			await negotiationProviderAdminPointComponent.set(negotiation);
 		}
 
-		const msInDay = 1440 * 60 * 1000;
-
 		test("removes expired negotiations and leaves unexpired ones", async () => {
 			const service = createProviderNegotiationPoint();
 			const now = Date.now();
 
-			await setProviderNegotiationAt(now - msInDay - 60000, {
-				id: "pid",
-				correlationId: "cid",
-				dateCreated: new Date().toISOString(),
-				state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
-				organizationIdentity: "identity",
-				trustVerificationInfo: { identity: "identity" }
-			});
-			await setProviderNegotiationAt(now + msInDay, {
+			await setProviderNegotiationAt(
+				now - DurationConstants.MsPerDay - DurationConstants.MsPerMinute,
+				{
+					id: "pid",
+					correlationId: "cid",
+					dateCreated: new Date().toISOString(),
+					state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
+					organizationIdentity: "identity",
+					trustVerificationInfo: { identity: "identity" }
+				}
+			);
+			await setProviderNegotiationAt(now + DurationConstants.MsPerDay, {
 				id: "pid2",
 				correlationId: "cid2",
 				dateCreated: new Date().toISOString(),
@@ -3832,7 +3834,7 @@ describe("PolicyNegotiationPointService", () => {
 				trustVerificationInfo: { identity: "identity" }
 			});
 
-			Date.now = vi.fn().mockImplementation(() => now + msInDay);
+			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
 			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
 
 			await expect(negotiationProviderAdminPointComponent.get("pid")).rejects.toMatchObject({
@@ -3845,14 +3847,17 @@ describe("PolicyNegotiationPointService", () => {
 			const service = createProviderNegotiationPoint();
 			const now = Date.now();
 
-			await setProviderNegotiationAt(now - msInDay - 60000, {
-				id: "expired-pid",
-				correlationId: "expired-cid",
-				dateCreated: new Date().toISOString(),
-				state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
-				organizationIdentity: "identity",
-				trustVerificationInfo: { identity: "identity" }
-			});
+			await setProviderNegotiationAt(
+				now - DurationConstants.MsPerDay - DurationConstants.MsPerMinute,
+				{
+					id: "expired-pid",
+					correlationId: "expired-cid",
+					dateCreated: new Date().toISOString(),
+					state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
+					organizationIdentity: "identity",
+					trustVerificationInfo: { identity: "identity" }
+				}
+			);
 			// Manual intervention means expires stays undefined, so it is never swept.
 			await setProviderNegotiationAt(now, {
 				id: "manual-pid",
@@ -3864,7 +3869,7 @@ describe("PolicyNegotiationPointService", () => {
 				trustVerificationInfo: { identity: "identity" }
 			});
 
-			Date.now = vi.fn().mockImplementation(() => now + msInDay);
+			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
 			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
 
 			await expect(negotiationProviderAdminPointComponent.get("expired-pid")).rejects.toMatchObject(
@@ -3883,17 +3888,20 @@ describe("PolicyNegotiationPointService", () => {
 				.mockResolvedValue(undefined);
 			const now = Date.now();
 
-			await setProviderNegotiationAt(now - msInDay - 60000, {
-				id: "expired-pid",
-				correlationId: "expired-cid",
-				dateCreated: new Date().toISOString(),
-				state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
-				callbackAddress: "https://consumer.example.com/callback",
-				organizationIdentity: "identity",
-				trustVerificationInfo: { identity: "identity" }
-			});
+			await setProviderNegotiationAt(
+				now - DurationConstants.MsPerDay - DurationConstants.MsPerMinute,
+				{
+					id: "expired-pid",
+					correlationId: "expired-cid",
+					dateCreated: new Date().toISOString(),
+					state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
+					callbackAddress: "https://consumer.example.com/callback",
+					organizationIdentity: "identity",
+					trustVerificationInfo: { identity: "identity" }
+				}
+			);
 
-			Date.now = vi.fn().mockImplementation(() => now + msInDay);
+			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
 			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
 
 			expect(sendTerminateSpy).toHaveBeenCalledWith(
@@ -3915,17 +3923,20 @@ describe("PolicyNegotiationPointService", () => {
 			);
 			const now = Date.now();
 
-			await setProviderNegotiationAt(now - msInDay - 60000, {
-				id: "expired-pid",
-				correlationId: "expired-cid",
-				dateCreated: new Date().toISOString(),
-				state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
-				callbackAddress: "https://consumer.example.com/callback",
-				organizationIdentity: "identity",
-				trustVerificationInfo: { identity: "identity" }
-			});
+			await setProviderNegotiationAt(
+				now - DurationConstants.MsPerDay - DurationConstants.MsPerMinute,
+				{
+					id: "expired-pid",
+					correlationId: "expired-cid",
+					dateCreated: new Date().toISOString(),
+					state: DataspaceProtocolContractNegotiationStateType.REQUESTED,
+					callbackAddress: "https://consumer.example.com/callback",
+					organizationIdentity: "identity",
+					trustVerificationInfo: { identity: "identity" }
+				}
+			);
 
-			Date.now = vi.fn().mockImplementation(() => now + msInDay);
+			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
 			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
 
 			await expect(negotiationProviderAdminPointComponent.get("expired-pid")).rejects.toMatchObject(

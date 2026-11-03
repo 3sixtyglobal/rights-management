@@ -1,10 +1,12 @@
 // Copyright 2025 IOTA Stiftung.
+// Copyright 2026 3Sixty Trade Ltd.
 // SPDX-License-Identifier: Apache-2.0.
 import {
 	ArrayHelper,
 	Coerce,
 	ComponentFactory,
 	Duration,
+	DurationUnit,
 	GeneralError,
 	Guards,
 	Is,
@@ -2404,7 +2406,7 @@ export class DefaultPolicyArbiter implements IPolicyArbiter {
 		const leftDuration = Coerce.duration(left);
 		const rightDuration = Coerce.duration(right);
 		if (!Is.undefined(leftDuration) && !Is.undefined(rightDuration)) {
-			return compare(Duration.toSeconds(leftDuration), Duration.toSeconds(rightDuration));
+			return compare(Duration.compare(leftDuration, rightDuration), 0);
 		}
 
 		// Only use string ordering when both operands are actual strings.
@@ -2422,14 +2424,14 @@ export class DefaultPolicyArbiter implements IPolicyArbiter {
 	 * Returns false if either side cannot be coerced to a duration.
 	 * @param left The left value.
 	 * @param right The right value.
-	 * @returns True when both sides represent the same duration in seconds.
+	 * @returns True when both sides represent the same total duration.
 	 * @internal
 	 */
 	private compareDurationEq(left: unknown, right: unknown): boolean {
 		const leftDuration = Coerce.duration(left);
 		const rightDuration = Coerce.duration(right);
 		if (!Is.undefined(leftDuration) && !Is.undefined(rightDuration)) {
-			return Duration.toSeconds(leftDuration) === Duration.toSeconds(rightDuration);
+			return Duration.equals(leftDuration, rightDuration);
 		}
 		return false;
 	}
@@ -2550,7 +2552,9 @@ export class DefaultPolicyArbiter implements IPolicyArbiter {
 			// Handle standard xsd types - convert to total seconds for ordered comparison.
 			// Falls back to numeric coercion for non-ISO values (e.g. bare seconds as a number).
 			const dur = Coerce.duration(value);
-			return Is.undefined(dur) ? Coerce.number(value) : Duration.toSeconds(dur);
+			return Is.undefined(dur)
+				? Coerce.number(value)
+				: Duration.toNumber(dur, DurationUnit.Seconds);
 		}
 		return undefined;
 	}
