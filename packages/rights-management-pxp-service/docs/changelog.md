@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.20.0-next.3](https://github.com/3sixtyglobal/rights-management/compare/rights-management-pxp-service-v0.20.0-next.2...rights-management-pxp-service-v0.20.0-next.3) (2026-11-03)
+
+
+### Features
+
+* release to next [skip ci] ([#69](https://github.com/3sixtyglobal/rights-management/issues/69)) ([402e189](https://github.com/3sixtyglobal/rights-management/commit/402e189b157f8907805fadd7e87447c411dcc800))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @3sixty/rights-management-models bumped from 0.20.0-next.2 to 0.20.0-next.3
+
 ## [0.20.0-next.2](https://github.com/3sixtyglobal/rights-management/compare/rights-management-pxp-service-v0.20.0-next.1...rights-management-pxp-service-v0.20.0-next.2) (2026-10-26)
 
 
