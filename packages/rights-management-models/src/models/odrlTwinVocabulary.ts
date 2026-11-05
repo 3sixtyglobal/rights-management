@@ -5,12 +5,11 @@
  * Canonical TWIN constraint vocabulary used in ODRL policies.
  * Policy authors should reference these constants rather than hand-copying the strings.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlTwinVocabulary = {
 	/**
 	 * The canonical TWIN JSONPath constraint source alias.
 	 * Used as the `source` property of an AssetCollection or as a prefix in
-	 * composed target identifiers (`twin:jsonPath:<dataSource>:<expression>`).
+	 * composed target identifiers (`twin:jsonPath:&lt;dataSource&gt;:&lt;expression&gt;`).
 	 */
 	JsonPath: "twin:jsonPath",
 

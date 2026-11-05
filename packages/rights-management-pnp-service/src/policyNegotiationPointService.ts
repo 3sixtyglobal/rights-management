@@ -443,7 +443,9 @@ export class PolicyNegotiationPointService implements IPolicyNegotiationPointCom
 
 			try {
 				providerOffer = await this._policyAdministrationPointComponent.getOffer(offerUid);
-			} catch {}
+			} catch {
+				// The offer does not exist, handled below.
+			}
 
 			if (Is.empty(providerOffer)) {
 				// No offer, so error

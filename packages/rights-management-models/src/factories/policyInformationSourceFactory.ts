@@ -6,7 +6,6 @@ import type { IPolicyInformationSource } from "../models/pip/IPolicyInformationS
 /**
  * Factory for managing policy information sources registration and retrieval.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyInformationSourceFactory = Factory.createFactory<IPolicyInformationSource>(
 	"policy-information-source"
 );

@@ -4,7 +4,6 @@
 /**
  * Well-known ODRL profile URIs used by the TWIN platform.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlProfiles = {
 	/**
 	 * The TWIN platform ODRL profile URI.

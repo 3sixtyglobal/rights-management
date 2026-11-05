@@ -4,7 +4,6 @@
 /**
  * The type of decision from a Policy Decision Point (PDP).
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyDecision = {
 	/**
 	 * Granted - the property in the original data can be accessed.

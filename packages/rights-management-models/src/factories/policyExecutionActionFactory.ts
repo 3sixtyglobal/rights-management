@@ -6,6 +6,5 @@ import type { IPolicyExecutionAction } from "../models/pxp/IPolicyExecutionActio
 /**
  * Factory for managing policy execution action registration and retrieval.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyExecutionActionFactory =
 	Factory.createFactory<IPolicyExecutionAction>("policy-execution-action");

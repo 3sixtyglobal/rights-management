@@ -4,7 +4,6 @@
 /**
  * The namespaces for rights management.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const RightsManagementNamespaces = {
 	/**
 	 * Policy.

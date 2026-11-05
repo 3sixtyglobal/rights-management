@@ -6,7 +6,6 @@ import type { IPolicyEnforcementProcessor } from "../models/pep/IPolicyEnforceme
 /**
  * Factory for managing policy enforcement processors registration and retrieval.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyEnforcementProcessorFactory = Factory.createFactory<IPolicyEnforcementProcessor>(
 	"policy-enforcement-processor"
 );

@@ -4,7 +4,6 @@
 /**
  * The mode that can be used to retrieve information from PIP sources.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyInformationAccessMode = {
 	/**
 	 * Public.

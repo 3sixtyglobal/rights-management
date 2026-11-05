@@ -4,7 +4,6 @@
 /**
  * The types of Rights Management data.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const RightsManagementTypes = {
 	/**
 	 * Represents data access request.

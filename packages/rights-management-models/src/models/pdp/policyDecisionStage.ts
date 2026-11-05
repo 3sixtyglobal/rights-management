@@ -4,7 +4,6 @@
 /**
  * The stage at which a PXP is executed in the PDP.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyDecisionStage = {
 	/**
 	 * Before Decision.

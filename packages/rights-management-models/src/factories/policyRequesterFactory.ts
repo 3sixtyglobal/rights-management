@@ -6,5 +6,4 @@ import type { IPolicyRequester } from "../models/pnp/IPolicyRequester.js";
 /**
  * Factory for managing policy requester registration and retrieval.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyRequesterFactory = Factory.createFactory<IPolicyRequester>("policy-requester");

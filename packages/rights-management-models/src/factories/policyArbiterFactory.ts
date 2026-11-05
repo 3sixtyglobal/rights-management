@@ -6,5 +6,4 @@ import type { IPolicyArbiter } from "../models/pdp/IPolicyArbiter.js";
 /**
  * Factory for managing policy arbiters registration and retrieval.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyArbiterFactory = Factory.createFactory<IPolicyArbiter>("policy-arbiter");

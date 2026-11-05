@@ -6,7 +6,6 @@ import type { IPolicyObligationEnforcer } from "../models/pdp/IPolicyObligationE
 /**
  * Factory for managing policy obligation enforcer registration and retrieval.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const PolicyObligationEnforcerFactory = Factory.createFactory<IPolicyObligationEnforcer>(
 	"policy-obligation-enforcer"
 );

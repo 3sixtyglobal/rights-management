@@ -9,7 +9,7 @@ import type {
 	IRightsManagementSet
 } from "@3sixty/rights-management-models";
 import { OdrlContexts, OdrlTypes } from "@3sixty/standards-w3c-odrl";
-import { HttpMethod } from "@3sixty/web";
+import { HttpMethod, MimeTypes } from "@3sixty/web";
 import { PolicyAdministrationPointRestClient } from "../src/policyAdministrationPointRestClient.js";
 import {
 	createdResponse,
@@ -376,7 +376,7 @@ describe("PolicyAdministrationPointRestClient", () => {
 				ok: true,
 				status: 200,
 				headers: new Headers({
-					"content-type": "application/json",
+					"content-type": MimeTypes.Json,
 					link: `<${ENDPOINT}/${PREFIX}/policy/admin?cursor=page2>; rel="next"`
 				}),
 				json: async () => [TEST_POLICY]

@@ -3,7 +3,7 @@
 import { GuardError } from "@3sixty/core";
 import type { IPolicyNegotiation } from "@3sixty/rights-management-models";
 import { DataspaceProtocolContractNegotiationStateType } from "@3sixty/standards-dataspace-protocol";
-import { HttpMethod } from "@3sixty/web";
+import { HttpMethod, MimeTypes } from "@3sixty/web";
 import { PolicyNegotiationAdminPointRestClient } from "../src/policyNegotiationAdminPointRestClient.js";
 import {
 	createdResponse,
@@ -222,7 +222,7 @@ describe("PolicyNegotiationAdminPointRestClient", () => {
 				ok: true,
 				status: 200,
 				headers: new Headers({
-					"content-type": "application/json",
+					"content-type": MimeTypes.Json,
 					link: `<${ENDPOINT}/${PREFIX}/negotiations/admin?cursor=page2>; rel="next"`
 				}),
 				json: async () => [TEST_NEGOTIATION]
