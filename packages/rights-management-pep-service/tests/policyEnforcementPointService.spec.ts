@@ -36,7 +36,7 @@ import { PolicyEnforcementPointService } from "../src/policyEnforcementPointServ
  * Mock Policy Decision Point Component
  */
 class MockPolicyDecisionPointComponent implements IPolicyDecisionPointComponent {
-	public CLASS_NAME = "MockPolicyDecisionPointComponent";
+	public CLASS_NAME: string = nameof<MockPolicyDecisionPointComponent>();
 
 	// eslint-disable-next-line no-restricted-syntax
 	public evaluate = vi.fn();
