@@ -155,7 +155,7 @@ async function waitForState(
 /**
  * The internal members of the negotiation point service exercised by the cleanup tests.
  */
-interface InternalNegotiationPoint {
+interface IInternalNegotiationPoint {
 	cleanupOldStatesPartition(): Promise<void>;
 }
 
@@ -3835,7 +3835,7 @@ describe("PolicyNegotiationPointService", () => {
 			});
 
 			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
-			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
+			await (service as unknown as IInternalNegotiationPoint).cleanupOldStatesPartition();
 
 			await expect(negotiationProviderAdminPointComponent.get("pid")).rejects.toMatchObject({
 				name: expect.stringMatching("NotFoundError")
@@ -3870,7 +3870,7 @@ describe("PolicyNegotiationPointService", () => {
 			});
 
 			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
-			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
+			await (service as unknown as IInternalNegotiationPoint).cleanupOldStatesPartition();
 
 			await expect(negotiationProviderAdminPointComponent.get("expired-pid")).rejects.toMatchObject(
 				{
@@ -3902,7 +3902,7 @@ describe("PolicyNegotiationPointService", () => {
 			);
 
 			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
-			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
+			await (service as unknown as IInternalNegotiationPoint).cleanupOldStatesPartition();
 
 			expect(sendTerminateSpy).toHaveBeenCalledWith(
 				"https://consumer.example.com/callback",
@@ -3937,7 +3937,7 @@ describe("PolicyNegotiationPointService", () => {
 			);
 
 			Date.now = vi.fn().mockImplementation(() => now + DurationConstants.MsPerDay);
-			await (service as unknown as InternalNegotiationPoint).cleanupOldStatesPartition();
+			await (service as unknown as IInternalNegotiationPoint).cleanupOldStatesPartition();
 
 			await expect(negotiationProviderAdminPointComponent.get("expired-pid")).rejects.toMatchObject(
 				{
@@ -3957,7 +3957,7 @@ describe("PolicyNegotiationPointService", () => {
 			}));
 
 			const service = createProviderNegotiationPoint();
-			const internalService = service as unknown as InternalNegotiationPoint;
+			const internalService = service as unknown as IInternalNegotiationPoint;
 			const cleanupPartitionSpy = vi
 				.spyOn(internalService, "cleanupOldStatesPartition")
 				.mockResolvedValue(undefined);
@@ -3978,7 +3978,7 @@ describe("PolicyNegotiationPointService", () => {
 			}));
 
 			const service = createProviderNegotiationPoint();
-			const internalService = service as unknown as InternalNegotiationPoint;
+			const internalService = service as unknown as IInternalNegotiationPoint;
 			const cleanupPartitionSpy = vi
 				.spyOn(internalService, "cleanupOldStatesPartition")
 				.mockResolvedValue(undefined);
